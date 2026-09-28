@@ -1,0 +1,47 @@
+:root {
+    --ivory: #fbf7ee;
+    --cream: #f2e8d5;
+    --brown: #68483a;
+    --brown-dark: #3f2d26;
+    --sage: #78866b;
+    --terracotta: #b9785d;
+    --ink: #2f2925;
+    --white: #fffdf8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--ivory); font-family: "Segoe UI", system-ui, sans-serif; }
+h1, h2, h3, .brand { font-family: Georgia, "Times New Roman", serif; }
+.navbar-qy { background: rgba(251,247,238,.94); border-bottom: 1px solid #e5d8c2; backdrop-filter: blur(10px); }
+.brand { color: var(--brown-dark); letter-spacing: .15em; font-weight: 700; }
+.nav-link { color: var(--brown) !important; }
+.nav-link:hover { color: var(--terracotta) !important; }
+.btn-qy { background: var(--brown); color: white; border: 0; padding: .75rem 1.3rem; border-radius: 999px; }
+.btn-qy:hover { background: var(--brown-dark); color: white; }
+.btn-outline-qy { color: var(--brown); border: 1px solid var(--brown); border-radius: 999px; }
+.hero { min-height: 70vh; display: grid; align-items: center; background: radial-gradient(circle at 78% 38%, #ecd5b3 0 12%, transparent 13%), linear-gradient(120deg, #fffaf0 0%, #eee0c8 100%); overflow: hidden; }
+.eyebrow { color: var(--sage); letter-spacing: .18em; text-transform: uppercase; font-size: .8rem; font-weight: 700; }
+.hero h1 { color: var(--brown-dark); font-size: clamp(2.7rem, 6vw, 5.4rem); line-height: .98; }
+.hero p { color: #715f55; font-size: 1.15rem; max-width: 620px; }
+.candle-scene { position: relative; height: 390px; }
+.candle { position: absolute; bottom: 20px; width: 120px; border-radius: 18px 18px 10px 10px; box-shadow: 0 24px 45px rgba(70,48,36,.2); }
+.candle::before { content: ""; position: absolute; left: 50%; top: -58px; width: 28px; height: 52px; transform: translateX(-50%) rotate(4deg); background: radial-gradient(circle at 50% 72%, #fff5c9 0 20%, #f0a753 35%, #bb5d31 66%, transparent 70%); border-radius: 50%; filter: drop-shadow(0 0 18px #efb562); }
+.candle.one { height: 235px; left: 38%; background: #e7c49e; }
+.candle.two { height: 175px; left: 9%; width: 95px; background: #9aa288; }
+.candle.three { height: 145px; right: 5%; width: 105px; background: #c8896f; }
+.section-title { color: var(--brown-dark); font-size: 2.2rem; }
+.product-card { background: var(--white); border: 1px solid #eadfce; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 30px rgba(75,50,35,.08); height: 100%; transition: transform .2s ease; }
+.product-card:hover { transform: translateY(-5px); }
+.product-art { height: 185px; display: grid; place-items: center; background: linear-gradient(145deg, #f1e4d2, #ddd6bb); }
+.jar { width: 94px; height: 108px; border-radius: 11px 11px 20px 20px; background: rgba(255,253,245,.85); box-shadow: 0 14px 20px rgba(80,55,40,.16); border: 1px solid rgba(112,80,58,.18); position: relative; }
+.jar::after { content: "QY"; position: absolute; inset: 32px 12px auto; padding: 10px 0; text-align: center; border: 1px solid #a08c77; color: #6a5548; font-family: Georgia, serif; }
+.auth-page { min-height: 100vh; background: linear-gradient(135deg, #efe3cf, #faf6ed 55%, #dfe2d5); display: grid; place-items: center; padding: 90px 16px 40px; }
+.auth-card { width: min(100%, 470px); background: rgba(255,253,248,.96); border: 1px solid #eadfce; border-radius: 28px; padding: 2.2rem; box-shadow: 0 25px 70px rgba(71,48,36,.14); }
+.form-control { border-radius: 13px; border-color: #d8c8b5; padding: .8rem 1rem; background: #fffefa; }
+.form-control:focus { border-color: var(--sage); box-shadow: 0 0 0 .2rem rgba(120,134,107,.15); }
+.message { min-height: 24px; font-size: .92rem; }
+.profile-shell { min-height: 100vh; padding: 120px 16px 50px; background: linear-gradient(135deg, #f9f2e4, #e1e4d7); }
+.profile-card { background: var(--white); max-width: 760px; margin: auto; border-radius: 28px; padding: 2.2rem; box-shadow: 0 22px 60px rgba(68,48,38,.12); }
+.avatar { width: 96px; height: 96px; display: grid; place-items: center; border-radius: 50%; background: var(--sage); color: white; font: 2rem Georgia, serif; }
+.info-row { padding: 1rem 0; border-bottom: 1px solid #eee4d6; }
+.footer-qy { background: var(--brown-dark); color: #efe6da; }
+@media (max-width: 768px) { .candle-scene { height: 300px; } .hero { padding-top: 90px; } }
